@@ -1,0 +1,115 @@
+:root{
+    --bg: #333334;
+    --bg-secundary: #444444;
+    --primary: #f79600;
+}
+
+body{
+    font-family: 'Arvo', serif;
+    background-color: var(--bg);
+    color: white;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+h3{
+    font-size: 48px;
+    color: var(--primary) ;
+    margin: 5px;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+}
+
+.inputs {
+    background-color: var(--bg-secundary);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.text-inputs{
+    display: flex;
+    gap: 10px;
+}
+
+.input-name{
+    display: flex;
+    flex-direction: column;
+    grid-area: 5px;
+}
+
+input{
+    border-radius: 7px;
+    outline: none;
+    border: 2px solid var(--primary);
+    padding: 5px;
+}
+
+label{
+    font-size: 12px;
+    line-height: 2;
+}
+
+.btn{
+    border-radius: 50px;
+    outline: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 5px 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-c{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: white;
+}
+
+.btn-complete{
+    color: green;
+    border: 1px solid green;
+}
+
+.btn-delete{
+    color: red;
+    border: 1px solid red;
+}
+
+/**/
+
+.tasks-container{
+    background-color: var(--bg-secundary);
+}
+
+.task-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 5px solid var(--bg);
+}
+
+.complete{
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.589);
+}
+
+.hide{
+    display: none;
+}
